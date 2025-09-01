@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>broken table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .main{
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+      @media (max-width: 998px) {
+        table{
+            width: 135px;
+        }
+        .main{
+            overflow-x: auto;
+            font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <h2>Orders</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer</th>
+          <th>Service</th>
+          <th class="nowrap">Quantity</th>
+          <th class="nowrap">Status</th>
+          <th>Placed At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1023</td>
+          <td>Ali Khan</td>
+          <td>Instagram Likes — 1000</td>
+          <td class="nowrap">1000</td>
+          <td class="nowrap">Processing</td>
+          <td>2025-08-20 14:33</td>
+          <td><button>Edit</button> <button>Cancel</button></td>
+          2
+        </tr>
+        <!-- repeat rows -->
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>
